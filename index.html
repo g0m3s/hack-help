@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500&display=swap" rel="stylesheet">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hack Help</title>
+</head>
+<body>
+
+    <header>
+
+        <div class="logo" style=" grid-area: 'logo';">
+        
+            <h1 style="color: black; " >NOME DO PROJETO</h1>
+            <!-- <img src="img/logo-site.png" alt=""> -->
+
+        </div>
+
+        <div class="selecionarCidade">
+
+            <p>Selecione sua cidade</p>
+
+            <select name="cidades">
+                <option value="campos">Campos dos Goytacazes</option>
+                <option value="macae">Macae</option>
+                </select>
+
+        </div>
+    
+    </header>
+
+    <div class="container">
+
+        <div class="destaques">
+
+            <div class="destaque">
+
+                    <div id="destaque1">
+
+                        <img src="img/img1.jpg" alt="">
+
+                        <h4>BARRACA DO SEU ZÉ</h4>
+                        <p>Olá! vendo quitutes próximo ao posto x na BR-101. Venha conferir! produtos sempre fresquinhos.</p>
+                        <p style="font-size: 8pt;" > <b><br> MAIS INFORMAÇÕES: </b></p>
+
+                        <img src="img/logo-chat.png" alt="" style="height: 60px;width: 60px;" class="pisca" onclick="abreChat(1)">
+
+                        <div class="icons-destaque">
+
+                            <div class="flex">
+                                <img src="img/instagram-logo2.png" alt="">
+                                <p>@gom3.s</p>
+                            </div>
+                            <div class="flex">
+                                <img src="img/logo-whatsapp.png" alt="">
+                                <p>(22)9876565</p>
+                            </div>
+                            <div class="flex">
+                                <img src="img/logo-localizacao.png" alt="">
+                                <p>Rua Manuel Pessanha </p>
+                            </div>
+
+                        </div>
+
+                    </div>  
+
+                <div id="chatDestaque1" class="chatDestaque" >
+
+                    <form action="">
+
+                        <header style="border: none;"> <p>Envie-nos uma mensagem!</p> </header>
+
+                        <input type="text" placeholder="email">
+                        <textarea name="" id="txtArea1" cols="30" rows="10"></textarea>
+                        <div style="display: flex;">
+                            <button style="margin: 3px;" onclick="fechaChat(1)">voltar</button>
+                            <button style="margin: 3px;">enviar</button>
+                        </div>
+
+                    </form>
+
+                </div>
+
+            </div>
+
+            <div class="destaque">
+
+                <div id="destaque2">
+
+                    <img src="img/1.png" alt="">
+
+                    <h4>ARTESANATO DA BARBARA</h4>
+                    <p>Artigos delicados e artesanais para a decoração de ambientes.</p>
+                    <p style="font-size: 8pt;" > <b><br> MAIS INFORMAÇÕES: </b></p>
+
+                    <img src="img/logo-chat.png" alt="" style="height: 60px;width: 60px;" class="pisca" onclick="abreChat(2)">
+
+                    <div class="icons-destaque">
+
+                        <div class="flex">
+                            <img src="img/instagram-logo2.png" alt="">
+                            <p>@gom3.s</p>
+                        </div>
+                        <div class="flex">
+                            <img src="img/logo-whatsapp.png" alt="">
+                            <p>(22)9876565</p>
+                        </div>
+                        <div class="flex">
+                            <img src="img/logo-localizacao.png" alt="">
+                            <p>Rua Manuel Pessanha </p>
+                        </div>
+
+                    </div>
+
+                </div>  
+
+            <div id="chatDestaque2" class="chatDestaque" >
+
+                <form action="">
+
+                    <header style="border: none;"> <p>Envie-nos uma mensagem!</p> </header>
+
+                    <input type="text" placeholder="email">
+                    <textarea name="" id="txtArea1" cols="30" rows="10"></textarea>
+                    <div style="display: flex;">
+                        <button style="margin: 3px;" onclick="fechaChat(2)">voltar</button>
+                        <button style="margin: 3px;">enviar</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            </div>
+
+            <div class="destaque">
+
+                <div id="destaque3">
+
+                    <img src="img/2.png" alt="">
+
+                    <h4>MACRAMÊ CAMPOS</h4>
+                    <p>Arte da tecelagem, ideal para deixar os ambientes ainda mais bonitos.</p>
+                    <p style="font-size: 8pt;" > <b><br> MAIS INFORMAÇÕES: </b></p>
+
+                    <img src="img/logo-chat.png" alt="" style="height: 60px;width: 60px;" class="pisca" onclick="abreChat(3)">
+
+                    <div class="icons-destaque">
+
+                        <div class="flex">
+                            <img src="img/instagram-logo2.png" alt="">
+                            <p>@gom3.s</p>
+                        </div>
+                        <div class="flex">
+                            <img src="img/logo-whatsapp.png" alt="">
+                            <p>(22)9876565</p>
+                        </div>
+                        <div class="flex">
+                            <img src="img/logo-localizacao.png" alt="">
+                            <p>Rua Manuel Pessanha </p>
+                        </div>
+
+                    </div>
+
+                </div>  
+
+            <div id="chatDestaque3" class="chatDestaque" >
+
+                <form action="">
+
+                    <header style="border: none;"> <p>Envie-nos uma mensagem!</p> </header>
+
+                    <input type="text" placeholder="email">
+                    <textarea name="" id="txtArea1" cols="30" rows="10"></textarea>
+                    <div style="display: flex;">
+                        <button style="margin: 3px;" onclick="fechaChat(3)">voltar</button>
+                        <button style="margin: 3px;">enviar</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            </div>
+
+            <div class="destaque">
+
+                <div id="destaque4">
+
+                    <img src="img/3.png" alt="">
+
+                    <h4>BURGUEZÃO</h4>
+                    <p>Hamburguers artezanais com carne de primeira.</p>
+                    <p style="font-size: 8pt;" > <b><br> MAIS INFORMAÇÕES: </b></p>
+
+                    <img src="img/logo-chat.png" alt="" style="height: 60px;width: 60px;" class="pisca" onclick="abreChat(4)">
+
+                    <div class="icons-destaque">
+
+                        <div class="flex">
+                            <img src="img/instagram-logo2.png" alt="">
+                            <p>@gom3.s</p>
+                        </div>
+                        <div class="flex">
+                            <img src="img/logo-whatsapp.png" alt="">
+                            <p>(22)9876565</p>
+                        </div>
+                        <div class="flex">
+                            <img src="img/logo-localizacao.png" alt="">
+                            <p>Rua Manuel Pessanha </p>
+                        </div>
+
+                    </div>
+
+                </div>  
+
+            <div id="chatDestaque4" class="chatDestaque" >
+
+                <form action="">
+
+                    <header style="border: none;"> <p>Envie-nos uma mensagem!</p> </header>
+
+                    <input type="text" placeholder="email">
+                    <textarea name="" id="txtArea1" cols="30" rows="10"></textarea>
+                    <div style="display: flex;">
+                        <button style="margin: 3px;" onclick="fechaChat(4)">voltar</button>
+                        <button style="margin: 3px;">enviar</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            </div>
+
+            <div class="destaque">
+
+                <div id="destaque5">
+
+                    <img src="img/4.png" alt="">
+
+                    <h4>GABRIEL TECH</h4>
+                    <p>Manutenção de eletrônicos em geral.</p>
+                    <p style="font-size: 8pt;" > <b><br> MAIS INFORMAÇÕES: </b></p>
+
+                    <img src="img/logo-chat.png" alt="" style="height: 60px;width: 60px;" class="pisca" onclick="abreChat(5)">
+
+                    <div class="icons-destaque">
+
+                        <div class="flex">
+                            <img src="img/instagram-logo2.png" alt="">
+                            <p>@gom3.s</p>
+                        </div>
+                        <div class="flex">
+                            <img src="img/logo-whatsapp.png" alt="">
+                            <p>(22)9876565</p>
+                        </div>
+                        <div class="flex">
+                            <img src="img/logo-localizacao.png" alt="">
+                            <p>Rua Manuel Pessanha </p>
+                        </div>
+
+                    </div>
+
+                </div>  
+
+            <div id="chatDestaque5" class="chatDestaque" >
+
+                <form action="">
+
+                    <header style="border: none;"> <p>Envie-nos uma mensagem!</p> </header>
+
+                    <input type="text" placeholder="email">
+                    <textarea name="" id="txtArea1" cols="30" rows="10"></textarea>
+                    <div style="display: flex;">
+                        <button style="margin: 3px;" onclick="fechaChat(5)">voltar</button>
+                        <button style="margin: 3px;">enviar</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            </div>
+
+            <div class="destaque">
+
+                <div id="destaque6">
+
+                    <img src="img/5.png" alt="">
+
+                    <h4>BARRACA DO SEU ZÉ</h4>
+                    <p>Olá! vendo quitutes próximo ao posto x na BR-101. Venha conferir! produtos sempre fresquinhos.</p>
+                    <p style="font-size: 8pt;" > <b><br> MAIS INFORMAÇÕES: </b></p>
+
+                    <img src="img/logo-chat.png" alt="" style="height: 60px;width: 60px;" class="pisca" onclick="abreChat(6)">
+
+                    <div class="icons-destaque">
+
+                        <div class="flex">
+                            <img src="img/instagram-logo2.png" alt="">
+                            <p>@gom3.s</p>
+                        </div>
+                        <div class="flex">
+                            <img src="img/logo-whatsapp.png" alt="">
+                            <p>(22)9876565</p>
+                        </div>
+                        <div class="flex">
+                            <img src="img/logo-localizacao.png" alt="">
+                            <p>Rua Manuel Pessanha </p>
+                        </div>
+
+                    </div>
+
+                </div>  
+
+            <div id="chatDestaque6" class="chatDestaque" >
+
+                <form action="">
+
+                    <header style="border: none;"> <p>Envie-nos uma mensagem!</p> </header>
+
+                    <input type="text" placeholder="email">
+                    <textarea name="" id="txtArea1" cols="30" rows="10"></textarea>
+                    <div style="display: flex;">
+                        <button style="margin: 3px;" onclick="fechaChat(6)">voltar</button>
+                        <button style="margin: 3px;">enviar</button>
+                    </div>
+
+                </form>
+
+            </div>
+
+            </div>
+
+
+        </div>
+
+        <div class="categorias">
+
+            <h4>SELECIONE A CATEGORIA</h4>
+
+            <h3>Comida</h3>
+            <h3>Artesanato</h3>
+            <h3>Tecnologia</h3>
+            <h3>Comida</h3>
+            <h3>Comida</h3>
+
+        </div>
+
+    </div>
+
+    <script src="js/main.js"></script>
+    
+</body>
+</html>

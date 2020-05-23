@@ -1,0 +1,323 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+
+    height: 13vh;
+    /* display: flex;
+    align-items: center;
+    justify-content: space-between; */
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "logo" "select" ;
+    background-color: #87c892;
+    display: grid;
+
+}
+
+body{
+
+    overflow-x: hidden;
+    font-family: 'Oswald', sans-serif;
+    color: #4a8388;
+
+}
+
+.logo{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 13vh;
+    width: 100%;
+}
+
+.logo img {
+
+    height: 100px;
+    width: 250px;
+
+}
+
+.selecionarCidade{
+
+    position: relative;
+    float: right;
+    /* top: 10px;
+    right: 10px; */
+    grid-area: 'select';
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    flex-direction: column;
+
+}
+
+.container{
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "destaques" ;
+    height: 90vh;
+    width: 100vw;
+    margin: 0;
+    padding: 0;
+
+}
+
+.destaques{
+
+    grid-area: "destaques";
+    height: 100%;
+    background-color: #4a8388;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+
+}
+
+.destaque{
+
+    height: 470px;
+    width: 330px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    border-radius: 10px;
+    /* box-shadow: 0px 0px 5px black; */
+    margin: 15px;
+    background-color: #eddec5;
+
+}
+
+.destaque img{
+
+    height: 250px;
+    width:330px;
+    border-radius: 10px;
+    /* margin-top: -80px; */
+
+}
+
+.destaque h4 {
+
+    font-size: 15pt;
+    border-bottom: 1px solid;
+
+}
+
+.destaque p {
+
+    font-size: 10pt;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: justify;
+
+}
+
+/* .icons-destaque{
+
+    
+
+} */
+
+.icons-destaque img{
+
+    height: 30px;
+    width: 30px;
+
+}
+
+.chatDestaque{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+.categorias{
+
+    grid-area: "categorias";
+    height: 100%;
+    background-color: #276271;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* justify-content: center; */
+    padding-top: 60px;
+    color: #87c892;
+    
+}
+
+.categorias h4{
+
+    font-size: 20pt;
+
+}
+
+.categorias h3 {
+
+    font-size: 17pt;
+    border-bottom: 1px solid black;
+    margin: 20px 0px;
+    width: 90%;
+    height: 7%;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    background-color: #eddec5;
+    align-items: center;
+    border-radius: 10px;
+    color: #4a8388;
+
+
+}
+
+
+.imgHover:hover{
+
+    box-shadow: 0px 0px 5px black;
+    border-radius: 10%;
+
+
+}
+
+
+#destaque1{
+
+    display: block;
+
+}
+
+#chatDestaque1{
+
+    display: none;
+
+}
+
+
+#destaque2{
+
+    display: block;
+
+}
+
+#chatDestaque2{
+
+    display: none;
+
+}
+
+
+#destaque3{
+
+    display: block;
+
+}
+
+#chatDestaque3{
+
+    display: none;
+
+}
+
+
+#destaque4{
+
+    display: block;
+
+}
+
+#chatDestaque4{
+
+    display: none;
+
+}
+
+
+#destaque5{
+
+    display: block;
+
+}
+
+#chatDestaque5{
+
+    display: none;
+
+}
+
+
+#destaque6{
+
+    display: block;
+
+}
+
+#chatDestaque6{
+
+    display: none;
+
+}
+
+.flex{
+
+    display: flex;
+    align-items: center;
+
+}
+
+.flex img {
+
+    height: 20px;
+    width: 20px;
+
+}
+
+.pisca{
+
+    animation: pisca 3s infinite;
+
+}
+
+@keyframes pisca {
+
+    0%{
+
+        transform: translateY(0px);
+
+    }
+
+    50%{
+
+        transform: translateY(10px);
+
+    }
+
+    100%{
+
+        transform: translateY(0px);
+
+    }
+        
+}
+
+input[type="text"]{
+
+    border: none;
+    height: 30px;
+    margin: 5px;
+    border-radius: 10px;
+    padding-left: 5px;
+
+}

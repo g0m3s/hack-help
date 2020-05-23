@@ -1,0 +1,131 @@
+*{
+
+    margin: 0;
+    padding: 0;
+
+}
+
+header{
+
+    height: 13vh;
+    /* grid-template-columns: 3fr 1fr; */
+    /* grid-template-areas: "logo" "select" ; */
+    background-color: #87c892;
+    /* display: grid; */
+
+}
+
+body{
+
+    overflow-x: hidden;
+    font-family: 'Oswald', sans-serif;
+    color: #4a8388;
+    overflow-y: hidden;
+
+}
+
+.container{
+
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 90vh; */
+
+    display: grid;
+    grid-template-columns: 3fr 1fr;
+    grid-template-areas: "cadastro" "infos";
+    height: 100vh;
+
+}
+
+.cadastro{
+    
+    grid-area: "cadastro";
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #4a8388;
+    
+
+}
+
+.formularioDeCadastro{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 100%;
+    flex-direction: column;
+    background-color: bisque;
+    border-top-left-radius: 10%;
+    border-top-right-radius: 10%;
+    margin-top: 30px;
+
+}
+
+.flexColum{
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+
+}
+
+input[type="text"]{
+
+    border: none;
+    height: 30px;
+    margin: 5px;
+    border-radius: 10px;
+    padding: 10px;
+
+}
+
+input[type="submit"]{
+
+    height: 50px;
+    border-radius: 15px;
+    padding: 5px;
+    border: none;
+
+}
+
+select{
+
+    padding: 5px;
+    border-radius: 10px;
+    width: 130px;
+
+}
+
+.flex{
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+}
+
+.selects{
+
+    height: 100px;
+    text-align: center;
+    
+}
+
+.select{
+
+    width: 150px;
+    margin: 30px;
+
+}
+
+.infos{
+    
+    grid-area: "infos";
+    height: 100vh;
+    background-color: #276271;
+    
+}
